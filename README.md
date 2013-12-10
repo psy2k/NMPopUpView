@@ -1,7 +1,9 @@
 NMPopUpView
 ===========
 
-Simple class for iOS that shows nice popup windows.
+Simple class for iOS that shows nice popup windows. Final output is shown below:
+
+![alt tag](https://dl.dropboxusercontent.com/u/43740014/popupios1.gif)
 
 The MIT License (MIT)
 ======================
