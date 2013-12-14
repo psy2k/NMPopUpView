@@ -5,7 +5,7 @@ Simple class for iOS that shows nice popup windows. Final output is shown below:
 
 ![alt tag](https://dl.dropboxusercontent.com/u/43740014/popupios1.gif)
 
-To use it in your application, just import PopViewController.h and .m files in your project and call the pop up using this code:
+To use it in your application, just import PopViewController.h, PopViewController.m, PopViewController.xib and PopViewController_iPad.xib files (or the NMPopUpViewController group from the example project) in your project and call the pop up using this code:
 `````objective-c
 PopUpViewController *popViewController = [[PopUpViewController alloc] 
                                          initWithNibName:@"PopUpViewController" bundle:nil]; 
