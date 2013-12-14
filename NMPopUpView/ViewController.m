@@ -23,10 +23,17 @@
 }
 
 - (IBAction)showPopUp:(id)sender {
-    self.popViewController = [[PopUpViewController alloc] initWithNibName:@"PopUpViewController" bundle:nil];
-    [self.popViewController setTitle:@"This is a popup view"];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad){
+        self.popViewController = [[PopUpViewController alloc] initWithNibName:@"PopUpViewController_iPad" bundle:nil];
+        [self.popViewController setTitle:@"This is a popup view"];
     
-    [self.popViewController showInView:self.view animated:YES];
+        [self.popViewController showInView:self.view animated:YES];
+    } else {
+        self.popViewController = [[PopUpViewController alloc] initWithNibName:@"PopUpViewController" bundle:nil];
+        [self.popViewController setTitle:@"This is a popup view"];
+        
+        [self.popViewController showInView:self.view animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning
