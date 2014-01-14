@@ -13,6 +13,8 @@
 @interface PopUpViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIView *popUpView;
+@property (weak, nonatomic) IBOutlet UIImageView *logoImg;
+@property (weak, nonatomic) IBOutlet UILabel *messageLabel;
 
 - (void)showInView:(UIView *)aView animated:(BOOL)animated;
 

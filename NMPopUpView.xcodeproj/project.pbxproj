@@ -428,6 +428,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/nikosma/Documents/GitHub\\ Projects/NMPopUpView",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NMPopUpView/NMPopUpView-Prefix.pch";
 				INFOPLIST_FILE = "NMPopUpView/NMPopUpView-Info.plist";
@@ -443,6 +447,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/nikosma/Documents/GitHub\\ Projects/NMPopUpView",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NMPopUpView/NMPopUpView-Prefix.pch";
 				INFOPLIST_FILE = "NMPopUpView/NMPopUpView-Info.plist";
