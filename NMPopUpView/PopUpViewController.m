@@ -61,9 +61,11 @@
     }];
 }
 
-- (void)showInView:(UIView *)aView animated:(BOOL)animated
+- (void)showInView:(UIView *)aView withImage:(UIImage *)image withMessage:(NSString *)message animated:(BOOL)animated
 {
     [aView addSubview:self.view];
+    self.logoImg.image = image;
+    self.messageLabel.text = message;
     if (animated) {
         [self showAnimate];
     }

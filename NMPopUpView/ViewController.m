@@ -27,12 +27,12 @@
         self.popViewController = [[PopUpViewController alloc] initWithNibName:@"PopUpViewController_iPad" bundle:nil];
         [self.popViewController setTitle:@"This is a popup view"];
     
-        [self.popViewController showInView:self.view animated:YES];
+        [self.popViewController showInView:self.view withImage:[UIImage imageNamed:@"typpzdemo"] withMessage:@"You just triggered a great popup window" animated:YES];
     } else {
         self.popViewController = [[PopUpViewController alloc] initWithNibName:@"PopUpViewController" bundle:nil];
         [self.popViewController setTitle:@"This is a popup view"];
         
-        [self.popViewController showInView:self.view animated:YES];
+        [self.popViewController showInView:self.view withImage:[UIImage imageNamed:@"typpzdemo"] withMessage:@"You just triggered a great popup window" animated:YES];
     }
 }
 
