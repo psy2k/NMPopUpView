@@ -16,6 +16,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *logoImg;
 @property (weak, nonatomic) IBOutlet UILabel *messageLabel;
 
-- (void)showInView:(UIView *)aView animated:(BOOL)animated;
+- (void)showInView:(UIView *)aView withImage:(UIImage *)image withMessage:(NSString *)message animated:(BOOL)animated;
 
 @end

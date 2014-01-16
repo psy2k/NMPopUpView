@@ -10,7 +10,7 @@ To use it in your application, just import PopViewController.h, PopViewControlle
 PopUpViewController *popViewController = [[PopUpViewController alloc] 
                                          initWithNibName:@"PopUpViewController" bundle:nil]; 
 [popViewController setTitle:@"This is a popup view"];
-[popViewController showInView:self.view animated:YES];
+[popViewController showInView:self.view withImage:[UIImage imageNamed:@"yourImage"] withMessage:@"Your Message" animated:YES];
 ```````````
 The MIT License (MIT)
 ======================
