@@ -63,12 +63,14 @@
 
 - (void)showInView:(UIView *)aView withImage:(UIImage *)image withMessage:(NSString *)message animated:(BOOL)animated
 {
+    dispatch_async(dispatch_get_main_queue(), ^{
     [aView addSubview:self.view];
     self.logoImg.image = image;
     self.messageLabel.text = message;
     if (animated) {
         [self showAnimate];
     }
+    });
 }
 
 
