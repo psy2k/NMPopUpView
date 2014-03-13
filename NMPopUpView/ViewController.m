@@ -19,6 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setRoundedBorder:5 borderWidth:1 color:[UIColor colorWithRed:0.0 green:122.0/255.0 blue:1.0 alpha:1.0] forButton:showPopupBtn];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -34,6 +35,16 @@
         
         [self.popViewController showInView:self.view withImage:[UIImage imageNamed:@"typpzdemo"] withMessage:@"You just triggered a great popup window" animated:YES];
     }
+}
+
+- (void)setRoundedBorder:(float)radius borderWidth:(float)borderWidth color:(UIColor*)color forButton:(UIButton *)button
+{
+    CALayer * l = [button layer];
+    [l setMasksToBounds:YES];
+    [l setCornerRadius:radius];
+    // You can even add a border
+    [l setBorderWidth:borderWidth];
+    [l setBorderColor:[color CGColor]];
 }
 
 - (void)didReceiveMemoryWarning

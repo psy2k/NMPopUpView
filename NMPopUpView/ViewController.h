@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PopUpViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface ViewController : UIViewController
 
