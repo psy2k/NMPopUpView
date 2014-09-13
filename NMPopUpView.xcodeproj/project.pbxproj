@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A4071BF185C3D9F00192B45 /* PopUpViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4071BE185C3D9F00192B45 /* PopUpViewController_iPad.xib */; };
+		1A50281919C43F61000A2075 /* PopUpViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A50281819C43F61000A2075 /* PopUpViewControllerSwift.swift */; };
 		1A9A5F6B1856426800FD9455 /* typpzdemo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A5F691856426800FD9455 /* typpzdemo.png */; };
 		1A9A5F6C1856426800FD9455 /* typpzdemo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A5F6A1856426800FD9455 /* typpzdemo@2x.png */; };
 		1AFA6B7B18561242003C622E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFA6B7A18561242003C622E /* Foundation.framework */; };
@@ -41,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		1A4071BE185C3D9F00192B45 /* PopUpViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController_iPad.xib; sourceTree = "<group>"; };
+		1A50281519C43DAD000A2075 /* NMPopUpView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NMPopUpView-Bridging-Header.h"; sourceTree = "<group>"; };
+		1A50281819C43F61000A2075 /* PopUpViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewControllerSwift.swift; sourceTree = "<group>"; };
 		1A9A5F691856426800FD9455 /* typpzdemo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = typpzdemo.png; sourceTree = "<group>"; };
 		1A9A5F6A1856426800FD9455 /* typpzdemo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "typpzdemo@2x.png"; sourceTree = "<group>"; };
 		1AFA6B7718561242003C622E /* NMPopUpView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMPopUpView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +103,8 @@
 				1AFA6BB2185612AF003C622E /* PopUpViewController.m */,
 				1AFA6BB3185612AF003C622E /* PopUpViewController.xib */,
 				1AD47B61185C39300094231C /* iPad */,
+				1A50281519C43DAD000A2075 /* NMPopUpView-Bridging-Header.h */,
+				1A50281819C43F61000A2075 /* PopUpViewControllerSwift.swift */,
 			);
 			name = NMPopUpViewController;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 			files = (
 				1AFA6B9118561242003C622E /* ViewController.m in Sources */,
 				1AFA6B8B18561242003C622E /* AppDelegate.m in Sources */,
+				1A50281919C43F61000A2075 /* PopUpViewControllerSwift.swift in Sources */,
 				1AFA6B8718561242003C622E /* main.m in Sources */,
 				1AFA6BB4185612AF003C622E /* PopUpViewController.m in Sources */,
 			);
@@ -426,6 +432,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/nikosma/Documents/GitHub\\ Projects/NMPopUpView",
@@ -434,7 +441,10 @@
 				GCC_PREFIX_HEADER = "NMPopUpView/NMPopUpView-Prefix.pch";
 				INFOPLIST_FILE = "NMPopUpView/NMPopUpView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NMPopUpView/NMPopUpView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -445,6 +455,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/nikosma/Documents/GitHub\\ Projects/NMPopUpView",
@@ -453,7 +464,9 @@
 				GCC_PREFIX_HEADER = "NMPopUpView/NMPopUpView-Prefix.pch";
 				INFOPLIST_FILE = "NMPopUpView/NMPopUpView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NMPopUpView/NMPopUpView-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
