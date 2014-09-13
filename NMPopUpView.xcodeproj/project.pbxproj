@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1A4071BF185C3D9F00192B45 /* PopUpViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4071BE185C3D9F00192B45 /* PopUpViewController_iPad.xib */; };
-		1A9A5F6B1856426800FD9455 /* typpzdemo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A5F691856426800FD9455 /* typpzdemo.png */; };
-		1A9A5F6C1856426800FD9455 /* typpzdemo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9A5F6A1856426800FD9455 /* typpzdemo@2x.png */; };
+		1AD4B8DD19C44FD200FFDFCD /* PopUpViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4B8DC19C44FD200FFDFCD /* PopUpViewControllerSwift.swift */; };
 		1AFA6B7B18561242003C622E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFA6B7A18561242003C622E /* Foundation.framework */; };
 		1AFA6B7D18561242003C622E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFA6B7C18561242003C622E /* CoreGraphics.framework */; };
 		1AFA6B7F18561242003C622E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFA6B7E18561242003C622E /* UIKit.framework */; };
@@ -41,8 +40,8 @@
 
 /* Begin PBXFileReference section */
 		1A4071BE185C3D9F00192B45 /* PopUpViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController_iPad.xib; sourceTree = "<group>"; };
-		1A9A5F691856426800FD9455 /* typpzdemo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = typpzdemo.png; sourceTree = "<group>"; };
-		1A9A5F6A1856426800FD9455 /* typpzdemo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "typpzdemo@2x.png"; sourceTree = "<group>"; };
+		1A50281519C43DAD000A2075 /* NMPopUpView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NMPopUpView-Bridging-Header.h"; sourceTree = "<group>"; };
+		1AD4B8DC19C44FD200FFDFCD /* PopUpViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewControllerSwift.swift; sourceTree = "<group>"; };
 		1AFA6B7718561242003C622E /* NMPopUpView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMPopUpView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AFA6B7A18561242003C622E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1AFA6B7C18561242003C622E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,17 +99,9 @@
 				1AFA6BB2185612AF003C622E /* PopUpViewController.m */,
 				1AFA6BB3185612AF003C622E /* PopUpViewController.xib */,
 				1AD47B61185C39300094231C /* iPad */,
+				1AD4B8DC19C44FD200FFDFCD /* PopUpViewControllerSwift.swift */,
 			);
 			name = NMPopUpViewController;
-			sourceTree = "<group>";
-		};
-		1A9A5F681856425300FD9455 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				1A9A5F691856426800FD9455 /* typpzdemo.png */,
-				1A9A5F6A1856426800FD9455 /* typpzdemo@2x.png */,
-			);
-			name = images;
 			sourceTree = "<group>";
 		};
 		1AD47B61185C39300094231C /* iPad */ = {
@@ -155,8 +146,8 @@
 		1AFA6B8018561242003C622E /* NMPopUpView */ = {
 			isa = PBXGroup;
 			children = (
+				1A50281519C43DAD000A2075 /* NMPopUpView-Bridging-Header.h */,
 				1A4071C0185C3DAB00192B45 /* NMPopUpViewController */,
-				1A9A5F681856425300FD9455 /* images */,
 				1AFA6B8918561242003C622E /* AppDelegate.h */,
 				1AFA6B8A18561242003C622E /* AppDelegate.m */,
 				1AFA6B8C18561242003C622E /* Main.storyboard */,
@@ -276,10 +267,8 @@
 				1AFA6B9318561242003C622E /* Images.xcassets in Resources */,
 				1AFA6B8518561242003C622E /* InfoPlist.strings in Resources */,
 				1AFA6B8E18561242003C622E /* Main.storyboard in Resources */,
-				1A9A5F6B1856426800FD9455 /* typpzdemo.png in Resources */,
 				1A4071BF185C3D9F00192B45 /* PopUpViewController_iPad.xib in Resources */,
 				1AFA6BB5185612AF003C622E /* PopUpViewController.xib in Resources */,
-				1A9A5F6C1856426800FD9455 /* typpzdemo@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +289,7 @@
 			files = (
 				1AFA6B9118561242003C622E /* ViewController.m in Sources */,
 				1AFA6B8B18561242003C622E /* AppDelegate.m in Sources */,
+				1AD4B8DD19C44FD200FFDFCD /* PopUpViewControllerSwift.swift in Sources */,
 				1AFA6B8718561242003C622E /* main.m in Sources */,
 				1AFA6BB4185612AF003C622E /* PopUpViewController.m in Sources */,
 			);
@@ -369,6 +359,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -385,6 +376,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = NMPopUpView;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -407,6 +399,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -416,6 +409,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_MODULE_NAME = NMPopUpView;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -426,6 +420,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/nikosma/Documents/GitHub\\ Projects/NMPopUpView",
@@ -434,7 +430,10 @@
 				GCC_PREFIX_HEADER = "NMPopUpView/NMPopUpView-Prefix.pch";
 				INFOPLIST_FILE = "NMPopUpView/NMPopUpView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NMPopUpView/NMPopUpView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -445,6 +444,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/nikosma/Documents/GitHub\\ Projects/NMPopUpView",
@@ -453,7 +454,9 @@
 				GCC_PREFIX_HEADER = "NMPopUpView/NMPopUpView-Prefix.pch";
 				INFOPLIST_FILE = "NMPopUpView/NMPopUpView-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NMPopUpView/NMPopUpView-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
