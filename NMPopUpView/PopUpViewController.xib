@@ -7,9 +7,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopUpViewControllerSwift" customModule="NMPopUpView" customModuleProvider="target">
             <connections>
-                <outlet property="logoImg" destination="fJX-L7-ZK4" id="S0W-5d-IdB"/>
-                <outlet property="messageLabel" destination="vGX-I2-Qu4" id="2lS-9B-0oZ"/>
-                <outlet property="popUpView" destination="Pon-Sf-YGC" id="jWj-SK-gWn"/>
+                <outlet property="logoImg" destination="fJX-L7-ZK4" id="qHe-3t-nmY"/>
+                <outlet property="messageLabel" destination="vGX-I2-Qu4" id="Ah1-SR-hCM"/>
+                <outlet property="popUpView" destination="Pon-Sf-YGC" id="QXk-gu-0HH"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -31,7 +31,7 @@
                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
                             <connections>
-                                <action selector="closePopup:" destination="-1" eventType="touchUpInside" id="sAE-kB-hKY"/>
+                                <action selector="closePopup:" destination="-1" eventType="touchUpInside" id="eBb-at-Wfl"/>
                             </connections>
                         </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fJX-L7-ZK4">

@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PopUpViewController.h"
+//#import "PopUpViewController.h"
+#import "NMPopUpView-Swift.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UIButton *showPopupBtn;
-@property (strong, nonatomic) PopUpViewController *popViewController;
+@property (strong, nonatomic) PopUpViewControllerSwift *popViewController;
 
 @end

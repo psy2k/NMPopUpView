@@ -9,14 +9,12 @@
 import UIKit
 import QuartzCore
 
-class PopUpViewControllerSwift : UIViewController {
+@objc class PopUpViewControllerSwift : UIViewController {
     
     @IBOutlet weak var popUpView: UIView!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var logoImg: UIImageView!
     
-//    var myView: UIView! { return self.view as UIView }
-
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -33,14 +31,14 @@ class PopUpViewControllerSwift : UIViewController {
         self.popUpView.layer.shadowOffset = CGSizeMake(0.0, 0.0)
     }
     
-    @objc func showInView(aView: UIView!, withImage image : UIImage!, withMessage message: String!, animated: Bool)
+    func showInView(aView: UIView!, withImage image : UIImage!, withMessage message: String!, animated: Bool)
     {
-       aView.addSubview(self.view)
-       logoImg.image! = image
+        aView.addSubview(self.view)
+        logoImg!.image = image
         messageLabel!.text = message
         if animated
         {
-         self.showAnimate()
+            self.showAnimate()
         }
     }
     
@@ -49,15 +47,15 @@ class PopUpViewControllerSwift : UIViewController {
         self.view.transform = CGAffineTransformMakeScale(1.3, 1.3)
         self.view.alpha = 0.0;
         UIView.animateWithDuration(0.25, animations: {
-        self.view.alpha = 1.0
-        self.view.transform = CGAffineTransformMakeScale(1.0, 1.0)
+            self.view.alpha = 1.0
+            self.view.transform = CGAffineTransformMakeScale(1.0, 1.0)
         });
     }
-
+    
     func removeAnimate()
     {
         UIView.animateWithDuration(0.25, animations: {
-           self.view.transform = CGAffineTransformMakeScale(1.3, 1.3)
+            self.view.transform = CGAffineTransformMakeScale(1.3, 1.3)
             self.view.alpha = 0.0;
             }, completion:{(finished : Bool)  in
                 if (finished)
@@ -71,5 +69,3 @@ class PopUpViewControllerSwift : UIViewController {
         self.removeAnimate()
     }
 }
-
-
