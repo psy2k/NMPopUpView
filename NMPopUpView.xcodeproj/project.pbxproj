@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A4071BF185C3D9F00192B45 /* PopUpViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4071BE185C3D9F00192B45 /* PopUpViewController_iPad.xib */; };
 		1AD4B8DD19C44FD200FFDFCD /* PopUpViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4B8DC19C44FD200FFDFCD /* PopUpViewControllerSwift.swift */; };
+		1AD4B8DF19C4A12600FFDFCD /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4B8DE19C4A12600FFDFCD /* DemoViewController.swift */; };
 		1AFA6B7B18561242003C622E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFA6B7A18561242003C622E /* Foundation.framework */; };
 		1AFA6B7D18561242003C622E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFA6B7C18561242003C622E /* CoreGraphics.framework */; };
 		1AFA6B7F18561242003C622E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFA6B7E18561242003C622E /* UIKit.framework */; };
@@ -42,6 +43,7 @@
 		1A4071BE185C3D9F00192B45 /* PopUpViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController_iPad.xib; sourceTree = "<group>"; };
 		1A50281519C43DAD000A2075 /* NMPopUpView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NMPopUpView-Bridging-Header.h"; sourceTree = "<group>"; };
 		1AD4B8DC19C44FD200FFDFCD /* PopUpViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewControllerSwift.swift; sourceTree = "<group>"; };
+		1AD4B8DE19C4A12600FFDFCD /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 		1AFA6B7718561242003C622E /* NMPopUpView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMPopUpView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AFA6B7A18561242003C622E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1AFA6B7C18561242003C622E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,6 +114,15 @@
 			name = iPad;
 			sourceTree = "<group>";
 		};
+		1AD4B8E019C4AD6700FFDFCD /* ObjectiveCExample */ = {
+			isa = PBXGroup;
+			children = (
+				1AFA6B8F18561242003C622E /* ViewController.h */,
+				1AFA6B9018561242003C622E /* ViewController.m */,
+			);
+			name = ObjectiveCExample;
+			sourceTree = "<group>";
+		};
 		1AFA6B6E18561242003C622E = {
 			isa = PBXGroup;
 			children = (
@@ -146,13 +157,13 @@
 		1AFA6B8018561242003C622E /* NMPopUpView */ = {
 			isa = PBXGroup;
 			children = (
+				1AD4B8E019C4AD6700FFDFCD /* ObjectiveCExample */,
 				1A50281519C43DAD000A2075 /* NMPopUpView-Bridging-Header.h */,
 				1A4071C0185C3DAB00192B45 /* NMPopUpViewController */,
 				1AFA6B8918561242003C622E /* AppDelegate.h */,
 				1AFA6B8A18561242003C622E /* AppDelegate.m */,
 				1AFA6B8C18561242003C622E /* Main.storyboard */,
-				1AFA6B8F18561242003C622E /* ViewController.h */,
-				1AFA6B9018561242003C622E /* ViewController.m */,
+				1AD4B8DE19C4A12600FFDFCD /* DemoViewController.swift */,
 				1AFA6B9218561242003C622E /* Images.xcassets */,
 				1AFA6B8118561242003C622E /* Supporting Files */,
 			);
@@ -290,6 +301,7 @@
 				1AFA6B9118561242003C622E /* ViewController.m in Sources */,
 				1AFA6B8B18561242003C622E /* AppDelegate.m in Sources */,
 				1AD4B8DD19C44FD200FFDFCD /* PopUpViewControllerSwift.swift in Sources */,
+				1AD4B8DF19C4A12600FFDFCD /* DemoViewController.swift in Sources */,
 				1AFA6B8718561242003C622E /* main.m in Sources */,
 				1AFA6BB4185612AF003C622E /* PopUpViewController.m in Sources */,
 			);
