@@ -99,7 +99,6 @@
 				1AFA6BB2185612AF003C622E /* PopUpViewController.m */,
 				1AFA6BB3185612AF003C622E /* PopUpViewController.xib */,
 				1AD47B61185C39300094231C /* iPad */,
-				1A50281519C43DAD000A2075 /* NMPopUpView-Bridging-Header.h */,
 				1AD4B8DC19C44FD200FFDFCD /* PopUpViewControllerSwift.swift */,
 			);
 			name = NMPopUpViewController;
@@ -147,6 +146,7 @@
 		1AFA6B8018561242003C622E /* NMPopUpView */ = {
 			isa = PBXGroup;
 			children = (
+				1A50281519C43DAD000A2075 /* NMPopUpView-Bridging-Header.h */,
 				1A4071C0185C3DAB00192B45 /* NMPopUpViewController */,
 				1AFA6B8918561242003C622E /* AppDelegate.h */,
 				1AFA6B8A18561242003C622E /* AppDelegate.m */,

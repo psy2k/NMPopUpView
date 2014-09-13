@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import "PopUpViewController.h"
 #import "NMPopUpView-Swift.h"
 #import <QuartzCore/QuartzCore.h>
 
