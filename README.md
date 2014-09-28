@@ -1,9 +1,7 @@
 NMPopUpView
 ===========
 
-Simple class for iOS that shows nice popup windows. Final output is shown below:
-
-![alt tag](https://dl.dropboxusercontent.com/u/43740014/popupios1.gif)
+Simple class for iOS that shows nice popup windows. 
 
 To use it in your application, just import PopViewController.h, PopViewController.m (or PopViewControllerSwift.swift if you want to use the swift version), PopViewController.xib and PopViewController_iPad.xib files (or the NMPopUpViewController group from the example project) in your project and call the pop up using this code in Swift:
 `````swift
@@ -20,6 +18,11 @@ PopUpViewController *popViewController = [[PopUpViewController alloc]
                    withImage:[UIImage imageNamed:@"yourImage"] 
                    withMessage:@"Your Message" animated:YES];
 ```````````
+
+Final output is shown below:
+
+![alt tag](https://dl.dropboxusercontent.com/u/43740014/popupios1.gif)
+
 The MIT License (MIT)
 ======================
 Copyright (c) 2013 Nikos Maounis
