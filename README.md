@@ -9,7 +9,7 @@ To use it in your application, just import PopViewController.h, PopViewControlle
 `````swift
 var popViewController : PopUpViewController = PopUpViewControllerSwift(nibName: "PopUpViewController", bundle: nil)
 popViewController.title = "This is a popup view"
-popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a great popup                                 window", animated: true)
+popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a great popup window", animated: true)
 ```````````
 or this code in objective-c
 `````objective-c
