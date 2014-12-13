@@ -27,13 +27,27 @@
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad){
         self.popViewController = [[PopUpViewControllerSwift alloc] initWithNibName:@"PopUpViewController_iPad" bundle:nil];
         [self.popViewController setTitle:@"This is a popup view"];
-    
-        [self.popViewController showInView:self.view withImage:[UIImage imageNamed:@"typpzDemo"] withMessage:@"You just triggered a great popup window" animated:YES];
-    } else {
-        self.popViewController = [[PopUpViewControllerSwift alloc] initWithNibName:@"PopUpViewController" bundle:nil];
-        [self.popViewController setTitle:@"This is a popup view"];
         
         [self.popViewController showInView:self.view withImage:[UIImage imageNamed:@"typpzDemo"] withMessage:@"You just triggered a great popup window" animated:YES];
+    } else {
+        if ([UIScreen mainScreen].bounds.size.width > 320){
+            if ([UIScreen mainScreen].scale == 3){
+                self.popViewController = [[PopUpViewControllerSwift alloc] initWithNibName:@"PopUpViewController_iPhone6Plus" bundle:nil];
+                [self.popViewController setTitle:@"This is a popup view"];
+                
+                [self.popViewController showInView:self.view withImage:[UIImage imageNamed:@"typpzDemo"] withMessage:@"You just triggered a great popup window" animated:YES];
+            } else {
+                self.popViewController = [[PopUpViewControllerSwift alloc] initWithNibName:@"PopUpViewController_iPhone6" bundle:nil];
+                [self.popViewController setTitle:@"This is a popup view"];
+                
+                [self.popViewController showInView:self.view withImage:[UIImage imageNamed:@"typpzDemo"] withMessage:@"You just triggered a great popup window" animated:YES];
+            }
+        } else {
+            self.popViewController = [[PopUpViewControllerSwift alloc] initWithNibName:@"PopUpViewController" bundle:nil];
+            [self.popViewController setTitle:@"This is a popup view"];
+            
+            [self.popViewController showInView:self.view withImage:[UIImage imageNamed:@"typpzDemo"] withMessage:@"You just triggered a great popup window" animated:YES];
+        }
     }
 }
 
