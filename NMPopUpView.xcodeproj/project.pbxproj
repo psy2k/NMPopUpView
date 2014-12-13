@@ -10,6 +10,7 @@
 		1A4071BF185C3D9F00192B45 /* PopUpViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4071BE185C3D9F00192B45 /* PopUpViewController_iPad.xib */; };
 		1AD4B8DD19C44FD200FFDFCD /* PopUpViewControllerSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4B8DC19C44FD200FFDFCD /* PopUpViewControllerSwift.swift */; };
 		1AD4B8DF19C4A12600FFDFCD /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD4B8DE19C4A12600FFDFCD /* DemoViewController.swift */; };
+		1ADD5E151A3C1A94006DE070 /* PopUpViewController_iPhone6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ADD5E141A3C1A94006DE070 /* PopUpViewController_iPhone6.xib */; };
 		1AFA6B7B18561242003C622E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFA6B7A18561242003C622E /* Foundation.framework */; };
 		1AFA6B7D18561242003C622E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFA6B7C18561242003C622E /* CoreGraphics.framework */; };
 		1AFA6B7F18561242003C622E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFA6B7E18561242003C622E /* UIKit.framework */; };
@@ -44,6 +45,7 @@
 		1A50281519C43DAD000A2075 /* NMPopUpView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NMPopUpView-Bridging-Header.h"; sourceTree = "<group>"; };
 		1AD4B8DC19C44FD200FFDFCD /* PopUpViewControllerSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewControllerSwift.swift; sourceTree = "<group>"; };
 		1AD4B8DE19C4A12600FFDFCD /* DemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
+		1ADD5E141A3C1A94006DE070 /* PopUpViewController_iPhone6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpViewController_iPhone6.xib; sourceTree = "<group>"; };
 		1AFA6B7718561242003C622E /* NMPopUpView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NMPopUpView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AFA6B7A18561242003C622E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1AFA6B7C18561242003C622E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -102,6 +104,7 @@
 				1AFA6BB3185612AF003C622E /* PopUpViewController.xib */,
 				1AD47B61185C39300094231C /* iPad */,
 				1AD4B8DC19C44FD200FFDFCD /* PopUpViewControllerSwift.swift */,
+				1ADD5E141A3C1A94006DE070 /* PopUpViewController_iPhone6.xib */,
 			);
 			name = NMPopUpViewController;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				1AFA6B8E18561242003C622E /* Main.storyboard in Resources */,
 				1A4071BF185C3D9F00192B45 /* PopUpViewController_iPad.xib in Resources */,
 				1AFA6BB5185612AF003C622E /* PopUpViewController.xib in Resources */,
+				1ADD5E151A3C1A94006DE070 /* PopUpViewController_iPhone6.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

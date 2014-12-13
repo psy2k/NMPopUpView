@@ -37,9 +37,15 @@ import QuartzCore
             self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a great popup window", animated: true)
         } else
         {
+            if UIScreen.mainScreen().bounds.size.width > 320 {
+                self.popViewController = PopUpViewControllerSwift(nibName: "PopUpViewController_iPhone6", bundle: nil)
+                self.popViewController.title = "This is a popup view"
+                self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a great popup window", animated: true)
+            } else {
             self.popViewController = PopUpViewControllerSwift(nibName: "PopUpViewController", bundle: nil)
             self.popViewController.title = "This is a popup view"
             self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a great popup window", animated: true)
+            }
         }
     }
     
