@@ -9,7 +9,7 @@ var popViewController : PopUpViewController = PopUpViewControllerSwift(nibName: 
 popViewController.title = "This is a popup view"
 popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a great popup window", animated: true)
 ```````````
-or this code in objective-c
+or this code in Objective-C
 `````objective-c
 PopUpViewController *popViewController = [[PopUpViewController alloc] 
                                          initWithNibName:@"PopUpViewController" bundle:nil]; 
