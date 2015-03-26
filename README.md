@@ -23,6 +23,7 @@ Final output is shown below:
 
 ![alt tag](https://dl.dropboxusercontent.com/u/43740014/popupios1.gif)
 
+A walkthrough tutorial for the Objective-C version can be found [here](http://blog.typpz.com/2013/12/09/ios-sdk-create-a-pop-up-window/) and for the Swift version [here](http://blog.typpz.com/2015/01/31/ios-sdk-pop-up-window-in-swift/).
 The MIT License (MIT)
 ======================
 Copyright (c) 2013 Nikos Maounis
