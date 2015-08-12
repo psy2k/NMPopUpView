@@ -37,9 +37,21 @@ import QuartzCore
             self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a great popup window", animated: true)
         } else
         {
-            self.popViewController = PopUpViewControllerSwift(nibName: "PopUpViewController", bundle: nil)
-            self.popViewController.title = "This is a popup view"
-            self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a great popup window", animated: true)
+            if UIScreen.mainScreen().bounds.size.width > 320 {
+                if UIScreen.mainScreen().scale == 3 {
+                    self.popViewController = PopUpViewControllerSwift(nibName: "PopUpViewController_iPhone6Plus", bundle: nil)
+                    self.popViewController.title = "This is a popup view"
+                    self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a great popup window", animated: true)
+                } else {
+                    self.popViewController = PopUpViewControllerSwift(nibName: "PopUpViewController_iPhone6", bundle: nil)
+                    self.popViewController.title = "This is a popup view"
+                    self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a great popup window", animated: true)
+                }
+            } else {
+                self.popViewController = PopUpViewControllerSwift(nibName: "PopUpViewController", bundle: nil)
+                self.popViewController.title = "This is a popup view"
+                self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a great popup window", animated: true)
+            }
         }
     }
     
