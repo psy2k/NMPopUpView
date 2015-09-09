@@ -3,9 +3,12 @@ NMPopUpView
 
 Simple class for iOS that shows nice popup windows. 
 
-To use it in your application, just import `PopViewController.h`, `PopViewController.m` (or `PopViewControllerSwift.swift` if you want to use the swift version), `PopViewController.xib` and `PopViewController_iPad.xib` files (or the `NMPopUpViewController` group from the example project) in your project and call the pop up using this code in Swift:
+To use it in your application, just import `PopViewController.h`, `PopViewController.m` (or `PopViewControllerSwift.swift` if you want to use the swift version), `PopViewController.xib` and `PopViewController_iPad.xib` files (or the `NMPopUpViewController` group from the example project) in your project, declare a var for the popUp in your class
 `````swift
 var popViewController : PopUpViewController = PopUpViewControllerSwift(nibName: "PopUpViewController", bundle: nil)
+````````
+and call the pop up using this code in Swift:
+`````swift
 popViewController.title = "This is a popup view"
 popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a great popup window", animated: true)
 ```````````
