@@ -16,7 +16,7 @@ import QuartzCore
     
     var popViewController : PopUpViewControllerSwift!
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
