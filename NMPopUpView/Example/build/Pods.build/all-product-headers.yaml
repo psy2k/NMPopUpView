@@ -1,0 +1,33 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/nikosma/Documents/GitHubProjects/NMPopUpView/NMPopUpView/Example/build/Debug-iphonesimulator/NMPopUpViewSwift.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "NMPopUpViewSwift-Swift.h",
+          'external-contents': "/Users/nikosma/Documents/GitHubProjects/NMPopUpView/NMPopUpView/Example/build/Debug-iphonesimulator/NMPopUpViewSwift.framework/Headers/NMPopUpViewSwift-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "NMPopUpViewSwift-umbrella.h",
+          'external-contents': "/Users/nikosma/Documents/GitHubProjects/NMPopUpView/NMPopUpView/Example/Pods/Target Support Files/NMPopUpViewSwift/NMPopUpViewSwift-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/nikosma/Documents/GitHubProjects/NMPopUpView/NMPopUpView/Example/build/Debug-iphonesimulator/NMPopUpViewSwift.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/nikosma/Documents/GitHubProjects/NMPopUpView/NMPopUpView/Example/build/Pods.build/Debug-iphonesimulator/NMPopUpViewSwift.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}

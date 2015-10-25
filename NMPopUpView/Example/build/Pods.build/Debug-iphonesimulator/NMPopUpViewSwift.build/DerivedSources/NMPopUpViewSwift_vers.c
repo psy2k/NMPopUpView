@@ -1,0 +1,1 @@
+ const unsigned char NMPopUpViewSwiftVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:NMPopUpViewSwift  PROJECT:Pods-0.1.0" "\n"; const double NMPopUpViewSwiftVersionNumber __attribute__ ((used)) = (double)0.1;
