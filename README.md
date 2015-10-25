@@ -3,13 +3,53 @@ NMPopUpView
 
 Simple class for iOS that shows nice popup windows. 
 
-To use it in your application, just import `PopViewController.h`, `PopViewController.m` (or `PopViewControllerSwift.swift` if you want to use the swift version), `PopViewController.xib` and `PopViewController_iPad.xib` files (or the `NMPopUpViewController` group from the example project) in your project and call the pop up using this code in Swift:
+##Installation
+###Automatic installation using Cocoapods
+Add this to your podfile and run `pod install`:  
+`pod "NMPopUpViewSwift"`
+
+###Manual installation
+To use it in your application, just import `PopViewControllerSwift.swift` (~~or `PopViewController.h`, `PopViewController.m` if you want to use the Objective-C version~~), `PopViewController.xib` and `PopViewController_iPad.xib`, `PopViewController_iPhone6.xib`, `PopViewController_iPhone6Plus.xib` files (or the `NMPopUpViewController` group from the example project) in your project:
+
+###Usage
+####Swift
 `````swift
 var popViewController : PopUpViewController = PopUpViewControllerSwift(nibName: "PopUpViewController", bundle: nil)
 popViewController.title = "This is a popup view"
 popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a great popup window", animated: true)
 ```````````
-or this code in objective-c
+To get the appropriate .xib for your screen size declare the popUp as a forced unrapped variable and then use a method similar to the one below in order to call it:
+`````swift
+var popViewController : PopUpViewControllerSwift!
+
+@IBAction func showPopUp(sender: AnyObject) {
+        let bundle = NSBundle(forClass: PopUpViewControllerSwift.self)
+        if (UIDevice.currentDevice().userInterfaceIdiom == .Pad)
+        {
+            self.popViewController = PopUpViewControllerSwift(nibName: "PopUpViewController_iPad", bundle: bundle)
+            self.popViewController.title = "This is a popup view"
+            self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a great popup window", animated: true)
+        } else
+        {
+            if UIScreen.mainScreen().bounds.size.width > 320 {
+                if UIScreen.mainScreen().scale == 3 {
+                    self.popViewController = PopUpViewControllerSwift(nibName: "PopUpViewController_iPhone6Plus", bundle: bundle)
+                    self.popViewController.title = "This is a popup view"
+                    self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a great popup window", animated: true)
+                } else {
+                    self.popViewController = PopUpViewControllerSwift(nibName: "PopUpViewController_iPhone6", bundle: bundle)
+                    self.popViewController.title = "This is a popup view"
+                    self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a great popup window", animated: true)
+                }
+            } else {
+                self.popViewController = PopUpViewControllerSwift(nibName: "PopUpViewController", bundle: bundle)
+                self.popViewController.title = "This is a popup view"
+                self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a great popup window", animated: true)
+            }
+        }
+    }
+`````
+####Objective-C
 `````objective-c
 PopUpViewController *popViewController = [[PopUpViewController alloc] 
                                          initWithNibName:@"PopUpViewController" bundle:nil]; 
