@@ -1,5 +1,0 @@
-version: "Apple Swift version 2.1 (swiftlang-700.1.101.6 clang-700.1.76)"
-options: "cf30992813c55e5460c197f176c8a518"
-build_time: [499070561, 342308000]
-inputs:
-  "/Users/nikosma/Documents/GitHubProjects/NMPopUpView/NMPopUpView/Pod/Classes/PopUpViewControllerSwift.swift": [496050378, 0]
