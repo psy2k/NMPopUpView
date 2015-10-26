@@ -17,6 +17,7 @@ pod "NMPopUpViewSwift"
 To use it in your application, just import `PopViewControllerSwift.swift` (~~or `PopViewController.h`, `PopViewController.m` if you want to use the Objective-C version~~. If you still need the Objective-C version, download manually version 2.1 from [here](https://github.com/psy2k/NMPopUpView/releases)), `PopViewController.xib` and `PopViewController_iPad.xib`, `PopViewController_iPhone6.xib`, `PopViewController_iPhone6Plus.xib` files (or the `NMPopUpViewController` group from the example project) in your project:
 
 ###Usage
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 ####Swift
 `````swift
 var popViewController : PopUpViewController = PopUpViewControllerSwift(nibName: "PopUpViewController", bundle: nil)
