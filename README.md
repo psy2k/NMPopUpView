@@ -60,7 +60,7 @@ var popViewController : PopUpViewControllerSwift!
 `````
 ####Objective-C
 `````objective-c
-PopUpViewController *popViewController = [[PopUpViewController alloc]
+PopUpViewControllerSwift *popViewController = [[PopUpViewControllerSwift alloc]
                                          initWithNibName:@"PopUpViewController" bundle:nil];
 [popViewController setTitle:@"This is a popup view"];
 [popViewController showInView:self.view
