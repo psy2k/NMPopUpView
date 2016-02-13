@@ -7,7 +7,7 @@ NMPopUpView
 Simple class for iOS that shows nice popup windows, written in Swift. The project is build with Swift 2.0, so you need Xcode 7.0 or higher to use it.
 
 ##Installation
-###Automatic installation using Cocoapods
+###Automatic installation using CocoaPods
 Add this to your podfile and run `pod install`:  
 `````ruby
 pod "NMPopUpViewSwift"
