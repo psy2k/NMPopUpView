@@ -1,17 +1,23 @@
+[![Version](https://img.shields.io/cocoapods/v/NMPopUpViewSwift.svg?style=flat)](http://cocoapods.org/pods/NMPopUpViewSwift)
+[![License](https://img.shields.io/cocoapods/l/NMPopUpViewSwift.svg?style=flat)](http://cocoapods.org/pods/NMPopUpViewSwift)
+[![Platform](https://img.shields.io/cocoapods/p/NMPopUpViewSwift.svg?style=flat)](http://cocoapods.org/pods/NMPopUpViewSwift)
 NMPopUpView
 ===========
 
 Simple class for iOS that shows nice popup windows, written in Swift. The project is build with Swift 2.0, so you need Xcode 7.0 or higher to use it.
 
 ##Installation
-###Automatic installation using Cocoapods
+###Automatic installation using CocoaPods
 Add this to your podfile and run `pod install`:  
-`pod "NMPopUpViewSwift"`
+`````ruby
+pod "NMPopUpViewSwift"
+`````
 
 ###Manual installation
 To use it in your application, just import `PopViewControllerSwift.swift` (~~or `PopViewController.h`, `PopViewController.m` if you want to use the Objective-C version~~. If you still need the Objective-C version, download manually version 2.1 from [here](https://github.com/psy2k/NMPopUpView/releases)), `PopViewController.xib` and `PopViewController_iPad.xib`, `PopViewController_iPhone6.xib`, `PopViewController_iPhone6Plus.xib` files (or the `NMPopUpViewController` group from the example project) in your project:
 
 ###Usage
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 ####Swift
 `````swift
 var popViewController : PopUpViewController = PopUpViewControllerSwift(nibName: "PopUpViewController", bundle: nil)
@@ -54,7 +60,7 @@ var popViewController : PopUpViewControllerSwift!
 `````
 ####Objective-C
 `````objective-c
-PopUpViewController *popViewController = [[PopUpViewController alloc]
+PopUpViewControllerSwift *popViewController = [[PopUpViewControllerSwift alloc]
                                          initWithNibName:@"PopUpViewController" bundle:nil];
 [popViewController setTitle:@"This is a popup view"];
 [popViewController showInView:self.view
