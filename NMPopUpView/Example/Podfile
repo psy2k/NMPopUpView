@@ -1,12 +1,12 @@
 source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
 use_frameworks!
 
-target 'NMPopUpViewSwift_Example', :exclusive => true do
-  pod "NMPopUpViewSwift", :path => "../"
-end
-
-target 'NMPopUpViewSwift_Tests', :exclusive => true do
-  pod "NMPopUpViewSwift", :path => "../"
-
-  
+target 'NMPopUpViewSwift_Example' do
+    pod 'NMPopUpViewSwift'
+    
+    target 'NMPopUpViewSwift_Tests' do
+        inherit! :search_paths
+        pod 'NMPopUpViewSwift'
+    end
 end
