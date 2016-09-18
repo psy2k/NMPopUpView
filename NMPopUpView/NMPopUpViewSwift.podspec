@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "NMPopUpViewSwift"
-  s.version          = "4.0.1"
+  s.version          = "4.0.2"
   s.summary          = "NMPopUpViewSwift is a simple class for iOS that shows nice popup windows"
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ Simple class for iOS that shows nice popup windows with a subtle animation. Supp
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Nikos Maounis" => "nikospsy2k@gmail.com" }
-  s.source           = { :git => "https://github.com/psy2k/NMPopUpView.git", :tag => 'v4.0.1' }
+  s.source           = { :git => "https://github.com/psy2k/NMPopUpView.git", :tag => 'v4.0.2' }
   s.social_media_url = 'https://twitter.com/Psy2k'
 
   s.platform     = :ios, '8.0'
