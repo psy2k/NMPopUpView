@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showPopUp(_ sender: AnyObject) {
-        let bundle = Bundle(forClass: PopUpViewControllerSwift.self)
+        let bundle = Bundle(for: PopUpViewControllerSwift.self)
         if (UIDevice.current.userInterfaceIdiom == .pad)
         {
             self.popViewController = PopUpViewControllerSwift(nibName: "PopUpViewController_iPad", bundle: bundle)
