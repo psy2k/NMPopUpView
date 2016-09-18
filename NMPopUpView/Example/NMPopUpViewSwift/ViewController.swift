@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         super.init(coder: aDecoder)
     }
     
-    override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: NSBundle!) {
+    override init(nibName nibNameOrNil: String!, bundle nibBundleOrNil: Bundle!) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
@@ -28,17 +28,17 @@ class ViewController: UIViewController {
         self.setRoundedBorder(5, withBorderWidth: 1, withColor: UIColor(red: 0.0, green: 122.0/2550, blue: 1.0, alpha: 1.0), forButton: showPopupBtn)
     }
     
-    @IBAction func showPopUp(sender: AnyObject) {
-        let bundle = NSBundle(forClass: PopUpViewControllerSwift.self)
-        if (UIDevice.currentDevice().userInterfaceIdiom == .Pad)
+    @IBAction func showPopUp(_ sender: AnyObject) {
+        let bundle = Bundle(forClass: PopUpViewControllerSwift.self)
+        if (UIDevice.current.userInterfaceIdiom == .pad)
         {
             self.popViewController = PopUpViewControllerSwift(nibName: "PopUpViewController_iPad", bundle: bundle)
             self.popViewController.title = "This is a popup view"
             self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a great popup window", animated: true)
         } else
         {
-            if UIScreen.mainScreen().bounds.size.width > 320 {
-                if UIScreen.mainScreen().scale == 3 {
+            if UIScreen.main.bounds.size.width > 320 {
+                if UIScreen.main.scale == 3 {
                     self.popViewController = PopUpViewControllerSwift(nibName: "PopUpViewController_iPhone6Plus", bundle: bundle)
                     self.popViewController.title = "This is a popup view"
                     self.popViewController.showInView(self.view, withImage: UIImage(named: "typpzDemo"), withMessage: "You just triggered a great popup window", animated: true)
@@ -56,13 +56,13 @@ class ViewController: UIViewController {
     }
     
     
-    func setRoundedBorder(radius : CGFloat, withBorderWidth borderWidth: CGFloat, withColor color : UIColor, forButton button : UIButton)
+    func setRoundedBorder(_ radius : CGFloat, withBorderWidth borderWidth: CGFloat, withColor color : UIColor, forButton button : UIButton)
     {
         let l : CALayer = button.layer
         l.masksToBounds = true
         l.cornerRadius = radius
         l.borderWidth = borderWidth
-        l.borderColor = color.CGColor
+        l.borderColor = color.cgColor
     }
 
 
