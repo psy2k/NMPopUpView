@@ -10,6 +10,7 @@
 *.perspectivev3
 !default.perspectivev3
 xcuserdata
+xcshareddata
 profile
 *.moved-aside
 DerivedData
@@ -17,6 +18,6 @@ DerivedData
 *.hmap
 *.xccheckout
 */Example/build/*
-
-#CocoaPods
+*.ipa
+*.xcuserstate
 Pods
