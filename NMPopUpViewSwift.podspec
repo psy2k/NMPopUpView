@@ -8,14 +8,14 @@
 
 Pod::Spec.new do |s|
   s.name             = "NMPopUpViewSwift"
-  s.version          = "4.0.2"
+  s.version          = "5.0.0"
   s.summary          = "NMPopUpViewSwift is a simple class for iOS that shows nice popup windows"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
+#   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description      = <<-DESC
 Simple class for iOS that shows nice popup windows with a subtle animation. Support images and custom messages.
                        DESC
