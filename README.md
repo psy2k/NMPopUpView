@@ -6,19 +6,20 @@ NMPopUpView
 
 Simple class for iOS that shows nice popup windows, written in Swift. The project is build with Swift 3.0, so you need Xcode 8.0 or higher to use it.
 
-##Installation
-###Automatic installation using CocoaPods
+## Installation
+### Automatic installation using CocoaPods
+
 Add this to your podfile and run `pod install`:  
 `````ruby
 pod "NMPopUpViewSwift"
 `````
 
-###Manual installation
+### Manual installation
 To use it in your application, just import `PopViewControllerSwift.swift` (~~or `PopViewController.h`, `PopViewController.m` if you want to use the Objective-C version~~. If you still need the Objective-C version, download manually version 2.1 from [here](https://github.com/psy2k/NMPopUpView/releases)), `PopViewController.xib` and `PopViewController_iPad.xib`, `PopViewController_iPhone6.xib`, `PopViewController_iPhone6Plus.xib` files (or the `NMPopUpViewController` group from the example project) in your project:
 
-###Usage
+### Usage
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
-####Swift
+#### Swift
 `````swift
 var popViewController : PopUpViewController = PopUpViewControllerSwift(nibName: "PopUpViewController", bundle: nil)
 ````````
@@ -58,7 +59,7 @@ var popViewController : PopUpViewControllerSwift!
         }
     }
 `````
-####Objective-C
+#### Objective-C
 `````objective-c
 PopUpViewControllerSwift *popViewController = [[PopUpViewControllerSwift alloc]
                                          initWithNibName:@"PopUpViewController" bundle:nil];
