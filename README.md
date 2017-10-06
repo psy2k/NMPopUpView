@@ -8,7 +8,6 @@ Simple class for iOS that shows nice popup windows, written in Swift. The projec
 
 ## Installation
 ### Automatic installation using CocoaPods
-
 Add this to your podfile and run `pod install`:  
 `````ruby
 pod "NMPopUpViewSwift"
