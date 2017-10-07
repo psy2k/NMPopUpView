@@ -1,14 +1,12 @@
 PODS:
-  - NMPopUpViewSwift (0.1.0)
+  - NMPopUpViewSwift (4.0.2)
 
 DEPENDENCIES:
-  - NMPopUpViewSwift (from `../`)
-
-EXTERNAL SOURCES:
-  NMPopUpViewSwift:
-    :path: "../"
+  - NMPopUpViewSwift
 
 SPEC CHECKSUMS:
-  NMPopUpViewSwift: 24efac0f28fc9070340796d33f8b09641277f3bf
+  NMPopUpViewSwift: 9a2ea26dd7875804c478eb97bbc41cdab5d25da8
 
-COCOAPODS: 0.38.2
+PODFILE CHECKSUM: 5600559ecc8e15e6bcda4716d0ccc518de4923f2
+
+COCOAPODS: 1.3.1
