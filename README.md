@@ -1,5 +1,3 @@
-[![Version](https://img.shields.io/cocoapods/v/NMPopUpViewSwift.svg?style=flat)](http://cocoapods.org/pods/NMPopUpViewSwift)
-[![License](https://img.shields.io/cocoapods/l/NMPopUpViewSwift.svg?style=flat)](http://cocoapods.org/pods/NMPopUpViewSwift)
 [![Platform](https://img.shields.io/cocoapods/p/NMPopUpViewSwift.svg?style=flat)](http://cocoapods.org/pods/NMPopUpViewSwift)
 NMPopUpView
 ===========
